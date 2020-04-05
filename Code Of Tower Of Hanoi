@@ -1,0 +1,15 @@
+def TOH(q , f, t, a): 
+    if q == 1: 
+        print ("Take disk 1 from rod",f,"to rod",t )
+        return
+    TOH(q-1, f, a, t) 
+    print ("Take disk",n,"from rod",f,"to rod",t )
+    TOH(q-1, a, t, f) 
+           
+q =int(input("Enter no. of Disks="))
+TOH(q, 'A', 'C', 'B')  
+
+
+
+*** this code uses recursion ***
+    
